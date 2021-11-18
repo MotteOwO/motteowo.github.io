@@ -10,6 +10,19 @@
 		<title>Kemono place</title>
 		<link rel="stylesheet" href="style.css" type="text/css"/>
 		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="jquery.scrollTo.min.js"></script>
+		<script>
+			jQuery(function($){
+				$.scrollTo(0);
+				$('#link-cat').click(function(){$.scrollTo($('#cat'),1000);});
+				$('#link-fox').click(function(){$.scrollTo($('#fox'),1000);});
+				$('#link-dog').click(function(){$.scrollTo($('#dog'),1000);});
+				$('#link-bun').click(function(){$.scrollTo($('#bun'),1000);});
+				$('#link-oth').click(function(){$.scrollTo($('#oth'),1000);});
+			});
+		</script>
+		
 	</head>
 
 	<body>
@@ -24,11 +37,11 @@
 			
 				<div id="navi">
 				
-					<a href="#cat"> Catgirls / Catboys </a> <br/>
-					<a href="#fox"> Foxgirls / Foxboys </a> <br/>
-					<a href="#dog"> Doggirls / Dogboys </a> <br/>
-					<a href="#bun"> Bungirls / Bunboys </a> <br/>
-					<a href="#oth"> Others </a>
+					<a id="link-cat" href="#"> Catgirls / Catboys </a> <br/>
+					<a id="link-fox" href="#"> Foxgirls / Foxboys </a> <br/>
+					<a id="link-dog" href="#"> Doggirls / Dogboys </a> <br/>
+					<a id="link-bun" href="#"> Bungirls / Bunboys </a> <br/>
+					<a id="link-oth" href="#oh"> Others </a>
 					
 				</div>
 			
