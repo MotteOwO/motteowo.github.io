@@ -15,11 +15,16 @@
 		<script>
 			jQuery(function($){
 				$.scrollTo(0);
+				$('.goup').click(function(){$.scrollTo($('body'),1000);});
 				$('#link-cat').click(function(){$.scrollTo($('#cat'),1000);});
 				$('#link-fox').click(function(){$.scrollTo($('#fox'),1000);});
 				$('#link-dog').click(function(){$.scrollTo($('#dog'),1000);});
 				$('#link-bun').click(function(){$.scrollTo($('#bun'),1000);});
 				$('#link-oth').click(function(){$.scrollTo($('#oth'),1000);});
+			});
+			$(window).scroll(function(){
+				if($(this).scrollTop()>300) $('.goup').fadeIn();
+				else $('.goup').fadeOut();
 			});
 		</script>
 		
@@ -29,6 +34,8 @@
 	
 		<div id="alin1">
 		
+			<a href="#" class="goup"></a>
+			
 			<div id="logo">
 				<b> Cute Kemonos! </b>
 			</div>
